@@ -107,7 +107,7 @@ public class DBEmployeeType extends DBConnection {
         EmployeeType employeeType = null;
         try {
             connect();
-            String sql = "select * from employee_type were id = ?";
+            String sql = "select * from employee_type where id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();

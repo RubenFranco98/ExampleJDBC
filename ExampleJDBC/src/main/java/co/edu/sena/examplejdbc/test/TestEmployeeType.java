@@ -31,14 +31,14 @@ public class TestEmployeeType {
         
         //consultar todos
         System.out.println("*******************************");
-        List<EmployeeType> listEmployeeType = dBEmployeeType.findAll();
-        for (EmployeeType e : listEmployeeType) {
+        List<EmployeeType> findAll = dBEmployeeType.findAll();
+        for (EmployeeType e : findAll) {
             System.out.println("id: " + e.getId() + " descript: " + e.getDescript());
         }
         
         //consultar por id
         System.out.println("********************************");
-        EmployeeType employeeType2 = dBEmployeeType.findById(2);
+        EmployeeType employeeType2 = dBEmployeeType.findById(3);
         if(employeeType2 != null)
         {
             System.out.println("id: " + employeeType2.getId() + " descript: " + employeeType2.getDescript());
