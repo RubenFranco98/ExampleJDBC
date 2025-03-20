@@ -21,7 +21,7 @@ public class TestKey {
 //        Key key = new Key(5, "ADSO", "Bicentenario", 4, "Pedirlas en la cafetería");
 //        dBKey.insert(key);
 
-        //actualizar
+        //modificar
 //        key.setId(5);
 //        key.setName("Restaurante y Bar");
 //        key.setRoom("Palmetto");
