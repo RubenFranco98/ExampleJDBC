@@ -17,36 +17,36 @@ public class TestEmployeeType {
     public static void main(String[] args) {
         DBEmployeeType dBEmployeeType = new DBEmployeeType();
         
-        //insertar
-        //EmployeeType employeeType = new EmployeeType(6, "SUBDIRECTOR");
-        //dBEmployeeType.insert(employeeType);
-        
-        //actualizar
-        //employeeType.setId(5);
-        //employeeType.setDescript("COORDINADOR");
-        //dBEmployeeType.update(employeeType);
+//        //insertar
+//        EmployeeType employeeType = new EmployeeType(8, "COORDINADOR");
+////        dBEmployeeType.insert(employeeType);
+//        
+//        //actualizar
+//        employeeType.setId(8);
+//        employeeType.setDescript("CONSERJE");
+//        dBEmployeeType.update(employeeType);
         
         //eliminar
-        //dBEmployeeType.delete(5);
+//        dBEmployeeType.delete(8);
         
-        //consultar todos
-        System.out.println("*******************************");
-        List<EmployeeType> findAll = dBEmployeeType.findAll();
-        for (EmployeeType e : findAll) {
-            System.out.println("id: " + e.getId() + " descript: " + e.getDescript());
-        }
-        
-        //consultar por id
-        System.out.println("********************************");
-        EmployeeType employeeType2 = dBEmployeeType.findById(3);
-        if(employeeType2 != null)
-        {
-            System.out.println("id: " + employeeType2.getId() + " descript: " + employeeType2.getDescript());
-        }
-        else
-        {
-            System.out.println("No existe el EmployeeType con ese id");
-        }
+//        //consultar todos
+//        System.out.println("*******************************");
+//        List<EmployeeType> findAll = dBEmployeeType.findAll();
+//        for (EmployeeType e : findAll) {
+//            System.out.println("id: " + e.getId() + " descript: " + e.getDescript());
+//        }
+//        
+//        //consultar por id
+//        System.out.println("********************************");
+//        EmployeeType employeeType2 = dBEmployeeType.findById(5);
+//        if(employeeType2 != null)
+//        {
+//            System.out.println("id: " + employeeType2.getId() + " descript: " + employeeType2.getDescript());
+//        }
+//        else
+//        {
+//            System.out.println("No existe el EmployeeType con ese id");
+//        }
         
     }   
 }
