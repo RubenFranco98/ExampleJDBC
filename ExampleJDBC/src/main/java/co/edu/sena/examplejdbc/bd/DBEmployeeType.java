@@ -45,7 +45,7 @@ public class DBEmployeeType extends DBConnection {
             String sql = "update employee_type set descript = ? where id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, employeeType.getDescript());
-            preparedStatement.setInt(2, employeeType.getId());
+            preparedStatement.setInt(2, employeeType.getId()); //Preguntar el pq de este linea de codigo
             preparedStatement.executeUpdate();
             preparedStatement.close();
             
